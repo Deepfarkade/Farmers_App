@@ -56,29 +56,6 @@ def weather_fetch(city_name):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app = Flask(__name__)
 
 # render home page
