@@ -26,6 +26,14 @@
             <input type="float" class="form-control" id="Rainfall" name="Rainfall" placeholder="Enter the Rainfall (in mm)" style="font-weight: bold" required />
         </div>
         <div class="form-group">
+            <label for="Temp" style="font-size: 17px"><b>Temperature</b></label>
+            <input type="float" class="form-control" id="Temp" name="Temp" placeholder="Enter the Temp (In celsius)" style="font-weight: bold" required />
+        </div>
+        <div class="form-group">
+            <label for="Humidity" style="font-size: 17px"><b>Humidity</b></label>
+            <input type="float" class="form-control" id="Humidity" name="Humidity" placeholder="Enter the Humidity" style="font-weight: bold" required />
+        </div>
+        <div class="form-group">
             <label for="Area" style="font-size: 17px"><b>Area</b></label
       >
       <input
@@ -41,20 +49,87 @@
 
     <div class="form-group">
       <label for="Crop" style="font-size: 17px"><b>Crop</b></label>
-            <input type="text" class="form-control" id="Crop" name="Crop" placeholder="Enter Crop Name" style="font-weight: bold" required />
+            <!-- <input type="text" class="form-control" id="Crop" name="Crop" placeholder="Enter Crop Name" style="font-weight: bold" required />   -->
+            <select name="Crop" class="form-control" id="Crop" placeholder="Select a crop" style="font-weight: bold" required>
+        <option selected>Select crop</option>
+        <option>Banana</option>
+        <option>Blackgram</option>
+        <option>Coffee</option>
+        <option>Cotton</option>
+        <option>Grapes</option>
+        <option>Jute</option>
+        <option>Jute</option>
+        <option>Lentil</option>
+        <option>Maize</option>
+        <option>Mango</option>
+        <option>Orange</option>
+        <option>Papaya</option>
+        <option>PigeonPeas</option>
+        <option>Pomegranate</option>
+        <option>Rice</option>
+        </select>
+
         </div>
         <div class="form-group">
             <label for="Season" style="font-size: 17px"><b>Season</b></label>
-            <input type="text" class="form-control" id="Season" name="Season" placeholder="Enter the Season" style="font-weight: bold" required />
+            <!--  <input type="text" class="form-control" id="Season" name="Season" placeholder="Enter the Season" style="font-weight: bold" required /> -->
+            <select name="Season" class="form-control" id="Season" placeholder="Select a Season" style="font-weight: bold" required>
+                <option selected>Select Season</option>
+                <option>Kharif</option>
+                <option>Rabi</option>
+                <option>Summer</option>
+                <option>Whole Year</option>
+                <option>Winter</option>
+                </select>
+
         </div>
         <div class="form-group">
             <label for="State" style="font-size: 17px"><b>State</b></label>
-            <input type="text" class="form-control" id="State" name="State" placeholder="Enter the State" style="font-weight: bold" required />
+            <!-- <input type="text" class="form-control" id="State" name="State" placeholder="Enter the State" style="font-weight: bold" required /> -->
+            <select name="State" class="form-control" id="State" placeholder="Select a State" style="font-weight: bold" required>
+                <option selected>Select State</option>
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Chandigarh</option>
+                <option>Chhattisgarh</option>
+                <option>Dadra and Nagar Haveli</option>
+                <option>Goa</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Himachal Pradesh</option>
+                <option>Jammu and Kashmir</option>
+                <option>Jharkhand</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Manipur</option>
+                <option>Meghalaya</option>
+                <option>Mizoram</option>
+                <option>Nagaland</option>                
+                <option>Odisha</option>
+                <option>Puducherry</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Sikkim</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Tripura</option>
+                <option>Uttar Prades</option>
+                <option>Uttarakhand</option>
+                <option>West Bengal</option>
+                        
+                </select>
+
+
         </div>
 
         <div class="form-group">
             <label for="District" style="font-size: 17px"><b>District</b></label>
             <input type="text" class="form-control" id="District" name="District" placeholder="Enter the District" style="font-weight: bold" required />
+
         </div>
 
 
