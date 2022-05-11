@@ -141,7 +141,7 @@ def yield_prediction():
         dummy = pd.concat([ra,crp,sea,dst,st])
             #data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
         my_prediction = classifier.predict((dummy).T)
-        final_prediction = my_prediction[0]
+        final_prediction = "{:.3f}".format(my_prediction[0])
 
         return render_template('yield-result.html', prediction=final_prediction, title=title)
     else:
@@ -159,21 +159,22 @@ def crop_prediction():
         K = int(request.form['pottasium'])
         ph = float(request.form['ph'])
         rainfall = float(request.form['rainfall'])
+        temperature = float(request.form['ph'])
+        humidity = float(request.form['rainfall'])
 
         # state = request.form.get("stt")
-        city = request.form.get("city")
+     #   city = request.form.get("city")
 
-        if weather_fetch(city) != None:
-            temperature, humidity = weather_fetch(city)
-            data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
-            my_prediction = crop_recommendation_model.predict(data)
-            final_prediction = my_prediction[0]
+     #   if weather_fetch(city) != None:
+      #      temperature, humidity = weather_fetch(city)
+        data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
+        my_prediction = crop_recommendation_model.predict(data)
+        final_prediction = my_prediction[0]
+        return render_template('crop-result.html', prediction=final_prediction, title=title)
 
-            return render_template('crop-result.html', prediction=final_prediction, title=title)
+    else:
 
-        else:
-
-            return render_template('try_again.html', title=title)
+        return render_template('try_again.html', title=title)
 
 
 

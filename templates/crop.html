@@ -52,6 +52,17 @@
             <input type="number" step="0.01" class="form-control" id="Rainfall" name="rainfall" placeholder="Enter the value" style="font-weight: bold" required />
         </div>
         <div class="form-group">
+            <label for="temperature" style="font-size: 17px"><b>Temperature</b></label>
+            <input type="number" step="0.01" class="form-control" id="temperature" name="temperature" placeholder="Enter the value" style="font-weight: bold" required />
+        </div>
+        <div class="form-group">
+            <label for="humidity" style="font-size: 17px"><b>Humidity</b></label>
+            <input type="number" step="0.01" class="form-control" id="humidity" name="humidity" placeholder="Enter the value" style="font-weight: bold" required />
+        </div>
+
+
+        <!--
+        <div class="form-group">
             <label for="State" style="font-size: 17px "><b>State</b></label>
             <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" class="form-control" style="font-weight: bold; color: black;" required></select>
             <br />
@@ -61,7 +72,7 @@
                 print_state("sts");
             </script>
         </div>
-
+        -->
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-info" style="color: black; font-weight: bold; width: 130px; height:50px; border-radius:12px; font-size: 21px;">
         Predict
